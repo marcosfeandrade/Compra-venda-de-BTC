@@ -2,6 +2,7 @@ import java.util.Scanner;
 import java.math.*;
 
 public class App {
+    
     public static void main(String[] args) throws Exception {
         Scanner in = new Scanner (System.in);
         System.out.println("Digite qual o percentual acrescentado ao gráfico para venda: ");
@@ -19,24 +20,15 @@ public class App {
         System.out.println("Insira o percentual a ser usado nas venda: ");
         double vendaBTC = in.nextDouble();
         double carteiraBTC = 0;
-        double percentual;
+        double percentual = 0;
 
-        for(int i = 0; i < qtd; i++){
-            percentual =  Math.random() * (10 - (-10)) + -10;
-            Thread compra = new Thread(new Runnable()) {
-                public void run(){
-                    if(percentualCompra <= percentual) {
-                        valor *= percentual / 100;
-                        System.out.printf("Compra! Carteira: " + dolar);
-                    }
-                }
-            }
-            else if (percentualVenda >= percentual) vende;
+        // for(int i = 0; i < qtd; i++){
+        //     else if (percentualVenda >= percentual) vende;
 
-            else faz nada
+        //     else faz nada
 
-            sout deseja parar? s break
-        }
+        //     sout deseja parar? s break
+        // }
     }
 
 }
