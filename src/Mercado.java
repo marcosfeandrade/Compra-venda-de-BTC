@@ -1,12 +1,24 @@
+import java.io.*;
+import java.lang.Thread;
+
 public class Mercado implements Runnable {
-    private double valor;
+    private double btc = 3;
+    private double percentual;
 
     @Override
     public void run() {
-       valor = Math.random() * (10 - (-10)) + -10;
+        while(true) {
+            try {
+                percentual = Math.random() * (10 - (-10)) + -10;
+                btc = btc + (btc * (percentual / 100));
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
     }
 
-    public double getValue() {
-        return valor;
+    public double getBTC() {
+        return btc;
     }
 }
