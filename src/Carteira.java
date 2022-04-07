@@ -64,7 +64,6 @@ public class Carteira implements Runnable {
         if(this.carteiraBTC >= valor) {
             this.carteiraBTC = this.carteiraBTC - valor;
             this.carteiraDolar = this.carteiraDolar + (valor * this.valorBTC);
-            System.out.println("Ibimirim investimentos.");
             System.out.println("Valor BTC: " + this.valorBTC);
             System.out.println("Venda! Carteira: $" + this.carteiraDolar);
             System.out.println("Venda! Carteira: BTC" + this.carteiraBTC);
